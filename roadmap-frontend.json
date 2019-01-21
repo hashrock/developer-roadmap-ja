@@ -1,0 +1,32 @@
+{
+  "title": "フロントエンド基礎",
+  "tree": [
+    {
+      "label": "HTML",
+      "children": [
+        "HTMLの基礎",
+        "セマンティックなHTMLを書く",
+        "基本的なSEO",
+        "アクセシビリティ"
+      ]
+    },
+    {
+      "label": "CSS",
+      "children": [
+        "CSSの基礎",
+        "レイアウトを作る",
+        "メディアクエリ",
+        "CSS3を学ぶ"
+      ]
+    },
+    {
+      "label": "JavaScriptの基礎",
+      "children": [
+        "基礎的な文法",
+        "DOM操作を学ぶ",
+        "Fetch APIを学ぶ",
+        "ES6とJavaScriptの部品化を学ぶ"
+      ]
+    }
+  ]
+}
