@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Developer Roadmap - ja</title>
+    <style>
+      text {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+      }
+      line {
+        stroke-width: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div>Web開発者への道 ver 2019</div>
+    <p>
+      Web開発初心者向けのロードマップです。<a
+        href="https://github.com/kamranahmedse/developer-roadmap"
+        >developer-roadmap</a
+      >を和訳し、<br />
+      資料へのリンク集と、クリックするとチェックする機能を付加したものです。<br />
+      これはまだPoC（試しに作ってみた段階）です。
+    </p>
+
+    <div id="app">
+      <tree-section :treedata="treedata" :storage="storage"></tree-section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
