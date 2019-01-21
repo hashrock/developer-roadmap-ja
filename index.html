@@ -35,7 +35,11 @@
     </p>
 
     <div id="app">
-      <tree-section :treedata="treedata" :storage="storage"></tree-section>
+      <tree-section
+        v-for="roadmap in roadmaps"
+        :treedata="roadmap"
+        :storage="storage"
+      ></tree-section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js"></script>

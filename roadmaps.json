@@ -1,0 +1,120 @@
+[
+  {
+    "title": "Web Developer in 2019",
+    "tree": [
+      {
+        "label": "フロントエンド・バックエンド共通",
+        "children": [
+          "Git - バージョン管理",
+          "基本的なターミナル操作",
+          "データ構造＆アルゴリズム",
+          "SOLID, KISS, YAGNI",
+          "GitHub",
+          "ライセンス",
+          "Semantic Versioning",
+          "SSH",
+          "HTTP / HTTPS と API",
+          "デザインパターン",
+          "文字コード"
+        ]
+      }
+    ]
+  },
+
+  {
+    "title": "フロントエンド基礎",
+    "tree": [
+      {
+        "label": "HTML",
+        "children": [
+          "HTMLの基礎",
+          "セマンティックなHTMLを書く",
+          "基本的なSEO",
+          "アクセシビリティ"
+        ]
+      },
+      {
+        "label": "CSS",
+        "children": [
+          "CSSの基礎",
+          "レイアウトを作る",
+          "メディアクエリ",
+          "CSS3を学ぶ"
+        ]
+      },
+      {
+        "label": "JavaScriptの基礎",
+        "children": [
+          "基礎的な文法",
+          "DOM操作を学ぶ",
+          "Fetch APIを学ぶ",
+          "ES6とJavaScriptの部品化を学ぶ"
+        ]
+      },
+      {
+        "label": "パッケージマネージャ",
+        "children": ["npm", "yarn"]
+      },
+      {
+        "label": "CSS プリプロセッサ",
+        "children": ["SASS", "PostCSS"]
+      },
+
+      {
+        "label": "CSS フレームワーク",
+        "children": ["BootStrap", "Materialize CSS", "Bulma", "Semantic UI"]
+      },
+      {
+        "label": "CSS アーキテクチャ",
+        "children": ["BEM", "OOCSS", "SMACSS"]
+      },
+      {
+        "label": "ビルドツール : タスクランナー",
+        "children": ["npm scripts", "gulp"]
+      },
+      {
+        "label": "ビルドツール : Linterとフォーマッタ",
+        "children": ["Prettier", "ESLint", "JSHint", "JSLint", "JSCS"]
+      },
+      {
+        "label": "ビルドツール : モジュールバンドラ",
+        "children": ["Webpack", "Parcel", "Rollup"]
+      },
+      {
+        "label": "フレームワークを選ぼう",
+        "children": ["React.js", "Angular", "Vue.js"]
+      },
+      {
+        "label": "CSS in JS",
+        "children": [
+          "Styled Components",
+          "CSS Modules",
+          "Emotion",
+          "Radium",
+          "Glamorous"
+        ]
+      },
+      {
+        "label": "テストしよう",
+        "children": ["Jest", "Enzyme", "Cypress"]
+      },
+      {
+        "label": "テストの種類を理解しよう",
+        "children": ["ユニットテスト", "結合テスト", "機能テスト"]
+      },
+      {
+        "label": "PWA",
+        "children": [
+          "ストレージ",
+          "Web Sockets",
+          "Service Workers",
+          "Location",
+          "Notification",
+          "Device Orientation",
+          "Payments",
+          "Credentials"
+        ]
+      }
+    ]
+  }
+]

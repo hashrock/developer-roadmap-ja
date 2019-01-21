@@ -2,7 +2,7 @@ const LOCALSTORAGE_KEY = "developer-roadmap-ja";
 Vue.component("box", {
   template: `
   <g :transform="transform">
-    <rect :fill="fillColor" stroke="black" x=0 y=0 width="300" height="40"></rect>
+    <rect :fill="fillColor" stroke="black" stroke-width="2" x=0 y=0 width="300" height="40"></rect>
     <a :href="link">
       <text x=150 y=20 dominant-baseline="central" text-anchor="middle">{{label}}</text>
     </a>
@@ -50,7 +50,7 @@ Vue.component("box", {
 
 Vue.component("tree", {
   template: `<div>
-  <svg style="margin: 2rem" width="680" :height="height" :viewBox="viewBox">
+  <svg style="margin: 0rem 1rem 2rem 1rem" width="680" :height="height" :viewBox="viewBox">
     <g v-for="(item, idx) in children">
       <path stroke-linecap="round" fill="none" stroke-width=3 stroke="blue" stroke-dasharray="0.1,10" :d="curve(idx)"></path>
       <box :storage="storage" :x="360" :y="idx * 60" :label="item"></box>
@@ -71,6 +71,9 @@ Vue.component("tree", {
   },
   computed: {
     height() {
+      if (!this.children) {
+        return 60;
+      }
       return this.children.length * 60;
     },
     viewBox() {
@@ -98,13 +101,13 @@ new Vue({
   el: "#app",
   data: {
     storage: [],
-    treedata: {}
+    roadmaps: {}
   },
   mounted() {
-    fetch("./roadmap-frontend.json")
+    fetch("./roadmaps.json")
       .then(i => i.json())
       .then(d => {
-        this.treedata = d;
+        this.roadmaps = d;
       });
 
     const local = localStorage.getItem(LOCALSTORAGE_KEY);
